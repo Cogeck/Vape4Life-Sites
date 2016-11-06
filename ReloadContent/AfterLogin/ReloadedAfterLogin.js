@@ -1,0 +1,3 @@
+function Awesome(){
+	alert("Funtzt");	
+}

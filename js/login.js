@@ -20,22 +20,13 @@ var userObject = {user:JSON.stringify(userData)};
 	
      success: function(msg) {		
 		if(msg.d.HTML != "NOPE"){ 			
-			
-			// $.ajax({
-				// url : msg.d.HTML,
-				
-				// crossDomain:true,
-	
-				// beforeSend: function(xhr) {
-				   // xhr.setRequestHeader("Content-type", 
-										// "application/text; charset=utf-8");
-				// },
-				
-				// dataType: "text",
-				// success : function (data) {
-					// $("#ReloadContainer").html(data);
-				// }
-			// });
+
+			$.getScript( msg.d.JS, function( data, textStatus, jqxhr ) {
+				  console.log( data ); // Data returned
+				  console.log( textStatus ); // Success
+				  console.log( jqxhr.status ); // 200
+				  console.log( "Load was performed." );
+			});			
 			
 			$('#ReloadContainer').load(msg.d.HTML);
 		}
