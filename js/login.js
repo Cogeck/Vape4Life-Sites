@@ -1,10 +1,11 @@
 function succesCallback(html){
+	$('#login-form').empty();
 	$('#ReloadContainer').load(html);	
 }
 
 function deniedCallback (){	
-	$('#ReloadContainer').empty();
-	$('#ReloadContainer').append("Bitte versuchen sie es noch einmal");
+	$('#MSGContainer').empty();
+	$('#MSGContainer').append("Bitte versuchen sie es noch einmal");
 }
 
 function Login(user, pw){	   
