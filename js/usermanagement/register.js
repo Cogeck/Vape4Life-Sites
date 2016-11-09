@@ -3,8 +3,8 @@ function succesCallback(html) {
 }
 
 function deniedCallback() {
-	$('#ReloadContainer').empty();
-	$('#ReloadContainer').append("Bitte versuchen sie es noch einmal");
+	$('#reloadcontainer').empty();
+	$('#reloadcontainer').append("Bitte versuchen sie es noch einmal");
 }
 
 function Register(user, email, pw) {

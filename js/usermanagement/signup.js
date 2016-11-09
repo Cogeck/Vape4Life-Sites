@@ -5,10 +5,10 @@ function succesCallback(html) {
 
 function deniedCallback() {
 
-	$('#ReloadContainer').empty();
-	$('#ReloadContainer').append("Bitte versuchen sie es noch einmal");
+	$('#reloadcontainer').empty();
+	$('#reloadcontainer').append("Bitte versuchen sie es noch einmal");
 }
 
 function SignUp() {
-	ComunicateWithServer("", "SignUp", succesCallback, deniedCallback);
+	ComunicateWithServer("SignUp", succesCallback, deniedCallback);
 }

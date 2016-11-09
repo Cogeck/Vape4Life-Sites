@@ -9,61 +9,13 @@
         <script src="js/jquery-3.1.1.min.js"></script>
         <script src="js/Comunicate.js"></script>
         <script src="js/usermanagement/login.js"></script>
-
-<<<<<<< HEAD
       </head>
   <body>
 
     <div class="container">
-      <div>
-        <div class="logincontainer">
-          <div class="form-group">
-            <h2 class="">Sign In.</h2>
-          </div>
-          <div class="form-group">
-            <hr>
-            </div>
-          <div class="form-group">
-            <div class="input-group">
-              <span class="input-group-addon">
-                <span class="glyphicon glyphicon-envelope"></span>
-              </span>
-              <input id="Email" type="email" name="email" class="form-control" placeholder="Your Email" value="" maxlength="40">
-                </div>
-            <span class="text-danger"></span>
-          </div>
-          <div class="form-group">
-            <div class="input-group">
-              <span class="input-group-addon">
-                <span class="glyphicon glyphicon-lock"></span>
-              </span>
-              <input id="Password" type="password" name="pass" class="form-control" placeholder="Your Password" maxlength="15">
-                </div>
-            <span class="text-danger"></span>
-          </div>
-          <div class="form-group">
-            <hr>
-            </div>
-          <div class="form-group">
-            <button onclick="Login(document.getElementById('Email').value,document.getElementById('Password').value)" class="btn btn-block btn-primary" name="btn-login">Sign In</button>
-          </div>
-          <div class="form-group">
-            <hr>
-            </div>
-          <div class="form-group">
-            <button onclick="SignUp()" class="btn btn-block btn-primary" name="btn-signup">Register</button>
-          </div>
-        </div>
         <div id="registercontainer">
         </div>
-        <div id="reloadcontainer">
-        </div>
-      </div>
-=======
-		<div id="ReloadContainer" class="container">
-
-			<div id="login-form">
-			
+		<div id="logincontainer">
 				<div class="col-md-12">
 				
 					<div class="form-group">
@@ -95,7 +47,7 @@
 					</div>
 					
 					<div class="form-group">
-						<button onclick="Login(document.getElementById('Email').value,document.getElementById('Password').value)" class="btn btn-block btn-primary" name="btn-login">Sign In</button>
+						<button onclick="Login(document.getElementById('Email').value,document.getElementById('Password').value)" class="btn btn-block btn-primary" name="btn-login">Login</button>
 					</div>
 					
 					<div class="form-group">
@@ -103,17 +55,15 @@
 					</div>
 					
 					<div class="form-group">
-						<a href="register.html">Sign Up Here...</a>
+						<button onclick="SignUp()" class="btn btn-block btn-primary" name="btn-login">Sign Up</button>
 					</div>				
 									
 					<div id="MSGContainer" class="container"></div>
 									
 				</div>
-		   
 			</div>	
->>>>>>> origin/master
-
+			<div id="reloadcontainer">
+        </div>
     </div>
-
   </body>
 </html>

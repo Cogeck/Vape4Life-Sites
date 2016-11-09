@@ -1,10 +1,10 @@
 function succesCallback(html) {
-	$('#ReloadContainer').load(html);
+	$('#reloadcontainer').load(html);
 }
 
 function deniedCallback() {
-	$('#ReloadContainer').empty();
-	$('#ReloadContainer').append("Bitte versuchen sie es noch einmal");
+	$('#reloadcontainer').empty();
+	$('#reloadcontainer').append("Bitte versuchen sie es noch einmal");
 }
 
 function Login(user, pw) {
@@ -21,7 +21,7 @@ function SignUp() {
 }
 
 function succesSignUpCallback(html) {
-	$('.logincontainer').empty();
+	$('#logincontainer').empty();
 	$('#registercontainer').load(html);
 }
 

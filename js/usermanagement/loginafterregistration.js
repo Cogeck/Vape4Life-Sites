@@ -1,6 +1,6 @@
 function succesCallback(html) {
 	//$.getScript(html.d.JS, function (data, textStatus, jqxhr) { });
-	$('#ReloadContainer').load(html);
+	$('#reloadcontainer').load(html);
 }
 
 function deniedCallback() {
